@@ -1,6 +1,17 @@
+import { Routes, Route } from "react-router";
+import { Page } from "pages/page";
+import { GlobalStyle } from "./GlobalStyle";
+
+
+
 export const App = () => {
   return (
-    <div>Hello World !!!</div>
+    <>
+      <Routes>
+        <Route path="/" element={<Page/>} />
+      </Routes>
+      <GlobalStyle />
+    </>
   );
 }
 
